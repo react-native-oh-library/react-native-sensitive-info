@@ -1,0 +1,50 @@
+//{
+//  "module": {
+//    "name": "react_native_sensitive_info",
+//    "type": "har",
+//    "description": "$string:module_desc",
+//    "mainElement": "React_native_sensitive_infoAbility",
+//    "deviceTypes": [
+//      "phone",
+//      "tablet",
+//      "2in1"
+//    ],
+//    "deliveryWithInstall": true,
+//    "installationFree": false,
+//    "pages": "$profile:main_pages",
+//    "abilities": [
+//      {
+//        "name": "React_native_sensitive_infoAbility",
+//        "srcEntry": "./ets/react_native_sensitive_infoability/React_native_sensitive_infoAbility.ets",
+//        "description": "$string:React_native_sensitive_infoAbility_desc",
+//        "icon": "$media:layered_image",
+//        "label": "$string:React_native_sensitive_infoAbility_label",
+//        "startWindowIcon": "$media:startIcon",
+//        "startWindowBackground": "$color:start_window_background",
+//        "exported": true,
+//        "skills": [
+//          {
+//            "entities": [
+//              "entity.system.home"
+//            ],
+//            "actions": [
+//              "action.system.home"
+//            ]
+//          }
+//        ]
+//      }
+//    ]
+//  }
+//}
+{
+  "module": {
+    "name": "react_native_sensitive_info",
+    "type": "har",
+    "description": "",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ]
+  }
+}
