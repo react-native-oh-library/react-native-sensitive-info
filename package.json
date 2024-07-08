@@ -1,6 +1,6 @@
 {
-  "name": "react-native-sensitive-info",
-  "version": "6.0.0-alpha.9",
+  "name": "@react-native-oh-tpl/react-native-sensitive-info",
+  "version": "6.0.0-alpha.9-0.0.1",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -27,10 +27,19 @@
     "type": "git",
     "url": "git://github.com/mcodex/react-native-sensitive-info.git"
   },
+  "harmony": {
+    "alias": "react-native-sensitive-info",
+   "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
+  },
   "keywords": [
     "android",
     "ios",
     "keychain",
+    "harmony",
     "shared-preferences",
     "react-native",
     "windows"
