@@ -1,40 +1,21 @@
-<img alt="Cover" src="./cover.png" />
+react-native-sensitive-info
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![npm version](https://badge.fury.io/js/react-native-sensitive-info.svg)](https://badge.fury.io/js/react-native-sensitive-info)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-sensitive-info)](https://img.shields.io/npm/dm/react-native-sensitive-info)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![npm bundle size](https://img.shields.io/bundlephobia/min/react-native-sensitive-info)
+# @react-native-oh-tpl/react-native-sensitive-info
 
-# React Native Sensitive Info
+本项目基于 [react-native-sensitive-info ](https://github.com/kevinresol/react-native-sensitive-info)
 
-`react-native-sensitive-info` manages all data stored in Android Shared Preferences, iOS Keychain and Windows Credentials. You can set and get all key/value using simple methods. 
+## 文档地址 / Documentation URL 
 
-## Docs
+[中文 / Chinese](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-default-preference.md)
 
-Check out the [docs](https://mcodex.github.io/react-native-sensitive-info/docs) for installation and instructions usage.
+[英文 / English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-en/react-native-default-preference.md)
 
-## Contributors ✨
+## Codegen
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+该库已接入 codegen，具体请查阅文档。
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://mcodex.github.io"><img src="https://avatars2.githubusercontent.com/u/5920613?v=4" width="100px;" alt=""/><br /><sub><b>Mateus Andrade</b></sub></a><br /><a href="https://github.com/mCodex/react-native-sensitive-info/commits?author=mcodex" title="Documentation">📖</a> <a href="https://github.com/mCodex/react-native-sensitive-info/commits?author=mcodex" title="Code">💻</a> <a href="https://github.com/mCodex/react-native-sensitive-info/pulls?q=is%3Apr+reviewed-by%3Amcodex" title="Reviewed Pull Requests">👀</a> <a href="#ideas-mcodex" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-mcodex" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/maggialejandro"><img src="https://avatars1.githubusercontent.com/u/3394748?v=4" width="100px;" alt=""/><br /><sub><b>Alejandro</b></sub></a><br /><a href="https://github.com/mCodex/react-native-sensitive-info/commits?author=maggialejandro" title="Code">💻</a> <a href="#maintenance-maggialejandro" title="Maintenance">🚧</a></td>
-  </tr>
-</table>
+The library has been integrated with codegen. Please refer to the documentation for details.
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+## 请悉知 / Acknowledgements
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-## Contributing
-
-Pull requests are always welcome :)
+本项目基于 [The MIT License (MIT)](https://github.com/react-native-default-preference/blob/sig/LICENSE.md) ，请自由地享受和参与开源。
