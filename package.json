@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-sensitive-info",
-  "version": "6.0.0-alpha.9-0.0.1",
+  "version": "6.0.0-alpha.9-0.0.2",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -46,7 +46,8 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-sensitive-info": "6.0.0-alpha.9"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
