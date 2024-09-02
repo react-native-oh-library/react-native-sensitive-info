@@ -35,11 +35,9 @@ import { tool } from './tools';
 
 let preferences: dataPreferences.Preferences | null = null;
 let tools = new tool()
-
-
 const DEFAULT = 'default'
 const UTF8 = 'utf-8'
-let invalidateEnrollment = true;
+let invalidateEnrollment = false;
 
 const keyData = new Uint8Array([83, 217, 231, 76, 28, 113, 23, 219, 250, 71, 209, 210, 205, 97, 32, 159])
 
@@ -99,7 +97,6 @@ export class RNSensitiveInfoTurboModule extends TurboModule implements TM.Sensit
   }
 
   async decrypt(value: Uint8Array) {
-    let keyData = new Uint8Array();
     let symKey = await tools.genSymKeyByData(keyData);
     let decryptResult: string
     let plainText: cryptoFramework.DataBlob = { data: value };
@@ -144,6 +141,7 @@ export class RNSensitiveInfoTurboModule extends TurboModule implements TM.Sensit
         for (const item of allKeys) {
           newValues[item] = await this.decrypt(value[item]); // 等待异步方法完成
         }
+        console.info('key-values:',JSON.stringify(newValues) )
         res(newValues)
       })
     })
@@ -165,6 +163,9 @@ export class RNSensitiveInfoTurboModule extends TurboModule implements TM.Sensit
   isSensorAvailable(): Promise<Object> {
     return new Promise((res) => {
       try {
+        if (invalidateEnrollment){
+          return
+        }
         let userAuthInstance = userAuth.getUserAuthInstance(tools.authParam, tools.widgetParam);
         Logger.info('get userAuth instance success');
         userAuthInstance.start()
@@ -207,9 +208,17 @@ export class RNSensitiveInfoTurboModule extends TurboModule implements TM.Sensit
   }
 
   cancelFingerprintAuth(): void {
+    if (invalidateEnrollment){
+      return
+    }
     try {
       let userAuthInstance = userAuth.getUserAuthInstance(tools.authParam, tools.widgetParam);
-      userAuthInstance.cancel();
+      userAuthInstance.off('result', {
+        onResult (result) {
+          Logger.info('auth off result: ' + JSON.stringify(result));
+        }
+      });
+      Logger.info('auth off success');
     } catch (error) {
       Logger.error('auth catch error: ' + JSON.stringify(error));
     }
@@ -217,6 +226,5 @@ export class RNSensitiveInfoTurboModule extends TurboModule implements TM.Sensit
 
   setInvalidatedByBiometricEnrollment(set: boolean): void {
     invalidateEnrollment = set
-    Logger.info(JSON.stringify(invalidateEnrollment))
   }
 }
