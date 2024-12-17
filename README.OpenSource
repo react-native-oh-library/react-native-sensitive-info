@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-sensitive-info",
+        "License": "MIT License",
+        "License File": "https://github.com/mCodex/react-native-sensitive-info/blob/master/LICENSE",
+        "Version Number": "6.0.0-alpha.9",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/mCodex/react-native-sensitive-info",
+        "Description": "react-native-sensitive-info manages all data stored in Android Shared Preferences and iOS Keychain. You can set, get and delete keys/values using simple methods."
+    }
+]
