@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-sensitive-info",
-  "version": "6.0.0-alpha.9-0.0.2",
+  "version": "6.0.0-alpha.9-0.0.3-rc.1",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
