@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-sensitive-info",
-  "version": "6.0.0-alpha.9-0.0.3-rc.1",
+  "version": "6.0.0-alpha.9-0.0.3-rc.2",
   "description": "Keep the screen from going to sleep",
   "main": "index.ets",
   "author": "",
