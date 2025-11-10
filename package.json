@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-sensitive-info",
-  "version": "6.0.0-alpha.9-0.0.3-rc.1",
+  "version": "6.0.0-alpha.9-0.0.3-rc.2",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -43,6 +43,13 @@
     "shared-preferences",
     "react-native",
     "windows"
+  ],
+  "files": [
+    "/harmony",
+    "/src",
+    "/build",
+    "LICENSE",
+    "index.d.ts"
   ],
   "license": "MIT",
   "peerDependencies": {
